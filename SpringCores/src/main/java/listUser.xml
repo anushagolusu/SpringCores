@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  <bean id="userObj" class="com.SpringCore.Model.User">
+  
+  <property name="id" value="1"/>
+  <property name="name" value="Anusha"/>
+  <property name="skillList">
+  <list>
+  <value>"Java"</value>
+  <value>"MySql"</value>
+  <value>"JavaScript"</value>
+  </list>
+  </property>
+  <property name="phoneNumber">
+  <set>
+  <value>"7876356356"</value>
+  <value>"08742-9778676"</value>
+  </set>
+  </property>
+  <property name="projects"><map>
+  <entry key="P1" value="E-Commerce"></entry>
+  <entry key="P2" value="Inventory Management System"></entry>
+  </map>
+  </property>
+  <property name="userProperties">
+  <props>
+  <prop key="key1">Property1</prop>
+  <prop key="key2">Property2</prop>
+  <prop key="key3">Property3</prop>
+  </props>
+  </property>
+  </bean>  
+  </beans>
